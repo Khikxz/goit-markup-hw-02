@@ -26,6 +26,7 @@ header{
     border-bottom: 1px solid #E7E9FC;
     flex-direction: row;
     display: flex;
+    align-items: baseline;
     width: 1440px;
     height: 72px;
     flex-shrink: 0;
@@ -47,12 +48,12 @@ header > .logo {
     color: var(--iris, #4D5AE5);
 }
 
-.navigation a{
+.nav a{
     color: var(--navyblue, #2E2F42);
     font-weight: 500;
 }
 
-.navigation li{
+.nav li{
     display: inline-block;
 }
 
