@@ -21,7 +21,7 @@ ul{
 }
 
 /*----------------- HEADER -----------------*/
-header{
+.header{
     background: var(--white, #FFF);
     border-bottom: 1px solid #E7E9FC;
     flex-direction: row;
@@ -30,30 +30,30 @@ header{
     width: 1440px;
     height: 72px;
     flex-shrink: 0;
+    padding: 0px 0px 0px 156px;
 }
 
-header > .logo {
+.header a{
     color: var(--navyblue, #2E2F42); 
-    padding-left: 156px;
 }
 
-.company a{
+.company-link{
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 1.5em;
     letter-spacing: 0.32px;
 }
 
-.company a:active, .company a:focus {
+.company-link:active, .company-link:focus {
     color: var(--iris, #4D5AE5);
 }
 
-.nav a{
+.nav-list-item-link{
     color: var(--navyblue, #2E2F42);
     font-weight: 500;
 }
 
-.nav li{
+.nav-list-item{
     display: inline-block;
 }
 
@@ -61,13 +61,13 @@ header > .logo {
     padding-left: 332px;
 }
 
-.address a{
+.address-link{
     color: var(--slate, #434455);
     font-style: normal;
 }
 
 /*----------------- FOOTER -----------------*/
-footer {
+.footer{
     background: var(--navyblue, #2E2F42);
     width: 1284px;    
     height: 312px;
@@ -75,11 +75,11 @@ footer {
     padding: 100px 0px 0px 156px;
 }
 
-footer > .logo {
+.footer-link{
     color: var(--cloud, #F4F4FD);
 }
 
-footer > p{
+.footer-paragraph{
     color: var(--cloud, #F4F4FD);
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -112,7 +112,7 @@ body{
     flex-shrink: 0;
 }
 
-.board h1{
+.board-heading{
     color: var(--white, #FFF);
     text-align: center;
     font-weight: 700;
@@ -123,7 +123,7 @@ body{
     margin: 0px 400px 0px 400px;
 }
 
-.board .order{
+.board-button{
     /*BUTTON ICON*/
     background: var(--iris, #4D5AE5);
     align-items: flex-start;
@@ -142,31 +142,31 @@ body{
     letter-spacing: 0.64px;
 }
 
-.board .order:hover{
+.board-button:hover{
     cursor: pointer;
 }
 
-.board .order:active, .board .order:focus {
+.board-button:active, .board-button:focus {
     color: var(--iris, #4D5AE5);
     background: var(--white, #FFF);
 }
 
-.description{
+.features-content{
     padding-left: 156px;
 }
 
-.description ul{
+.features-content-list{
     line-height: 24px;
     display: inline-flex;
 }
 
-.description h3{
+.features-content-list-item-heading{
     font-weight: 500;
     font-size: 20px;
     letter-spacing: 0.4px;
 }
 
-.description p{
+.features-content-list-item-paragraph{
     color: var(--slate, #434455);
     font-size: 16px;
     letter-spacing: 0.32px;
@@ -182,7 +182,7 @@ body{
     letter-spacing: 0.72px;
 }
 
-.activity ul{
+.activity-list{
     display: inline-flex;
 }
 
@@ -193,7 +193,7 @@ body{
     flex-shrink: 0;
 }
 
-.team h2{
+.team-heading{
     text-transform: capitalize;
     font-weight: 700;
     font-size: 36px;
@@ -202,7 +202,7 @@ body{
     padding: 120px 0 72px 0;
 }
 
-.team h3{
+.team-list-item-heading{
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2em;
@@ -211,7 +211,7 @@ body{
     padding-top: -15%;
 }
 
-.team p{
+.team-list-item-paragraph{
     color: var(--slate, #434455);
     font-size: 16px;
     line-height: 1.5em;
@@ -219,7 +219,7 @@ body{
     margin: 0px 0px 0px 0px;
 }
 
-.team .card {
+.team-list-item {
     background: var(--white, #FFF);
     display: inline-flex;
     padding-bottom: 0px;
@@ -232,13 +232,13 @@ body{
 }
 
 /*----------------- PORTFOLIO PAGE -----------------*/
-.filter ul{
+.filter-list{
     align-items: center;
     justify-content: center;
     display: flex;
 }
 
-.buttons{   
+.filter-list-item-button{   
     background: var(--cloud, #F4F4FD);
     border: 1px solid #E7E9FC;
     border-radius: 4px;
@@ -253,11 +253,11 @@ body{
     text-align: center;
 }
 
-.buttons:hover{
+.filter-list-item-button:hover{
     cursor: pointer;
 }
 
-.buttons:active, .buttons:focus{
+.filter-list-item-button:active, .filter-list-item-button:focus{
     background: var(--ocean, #404BBF);
     border-radius: 4px;
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
@@ -271,11 +271,11 @@ body{
     letter-spacing: 0.64px;
 }
 
-.project ul{
+.project-list{
     padding-left: 156px;
 }
 
-.project ul> .gallery{
+.project-list-item{
     background: var(--white, #FFF);
     border: 1px solid#E7E9FC;
     width: 360px;
