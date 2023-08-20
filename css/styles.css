@@ -1,3 +1,13 @@
+:root{
+    /*------------ PALETTE ---------------*/
+        --navyblue: #2E2F42;
+        --ocean: #404BBF;
+        --slate: #434455;
+        --iris: #4D5AE5;
+        --cloud: #F4F4FD;
+        --white: #FFF;
+}
+
 a{
     text-decoration: none;
 }
@@ -17,12 +27,12 @@ ul{
 }
 
 .logo span{
-    color: var(--iris, #4D5AE5);
+    color: var(--iris);
 }
 
 /*----------------- HEADER -----------------*/
 .header{
-    background: var(--white, #FFF);
+    background: var(--white);
     border-bottom: 1px solid #E7E9FC;
     flex-direction: row;
     display: flex;
@@ -34,7 +44,7 @@ ul{
 }
 
 .header-link{
-    color: var(--navyblue, #2E2F42); 
+    color: var(--navyblue); 
 }
 
 .nav-list-item {
@@ -42,7 +52,7 @@ ul{
 }
 
 .nav-list-item-link{
-    color: var(--navyblue, #2E2F42);
+    color: var(--navyblue);
     font-weight: 500;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -52,7 +62,7 @@ ul{
 
 .nav-list-item-link:active, 
 .nav-list-item-link:focus {
-    color: var(--iris, #4D5AE5);
+    color: var(--iris);
 }
 
 .address{
@@ -60,18 +70,18 @@ ul{
 }
 
 .address-link{
-    color: var(--slate, #434455);
+    color: var(--slate);
     font-style: normal;
 }
 
 .address-link:active,
 .address-link:focus {
-    color: var(--iris, #4D5AE5);
+    color: var(--iris);
 }
 
 /*----------------- FOOTER -----------------*/
 .footer{
-    background: var(--navyblue, #2E2F42);
+    background: var(--navyblue);
     width: 1440px;    
     height: 312px;
     flex-shrink: 0;
@@ -79,11 +89,11 @@ ul{
 }
 
 .footer-link{
-    color: var(--cloud, #F4F4FD);
+    color: var(--cloud);
 }
 
 .footer-paragraph{
-    color: var(--cloud, #F4F4FD);
+    color: var(--cloud);
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 1.5em;
@@ -92,33 +102,23 @@ ul{
 }
 
 /*----------------- THE BODY -----------------*/
-body{
-
-    /*------------ PALETTE ---------------*/
-    --navyblue: #2E2F42;
-    --ocean: #404BBF;
-    --slate: #434455;
-    --iris: #4D5AE5;
-    --cloud: #F4F4FD;
-    --white: #FFF;
-
+.body{
     /*------------ DEFAULTS ---------------*/
-    color: var(--navyblue, #2E2F42);
+    color: var(--navyblue);
     font-family: 'Roboto', sans-serif;
     width: 1440px;
 }
 
 /*----------------- STUDIO PAGE -----------------*/
 .board{
-    background: var(--navyblue, #2E2F42);
+    background: var(--navyblue);
     height: 600px;
     flex-shrink: 0;
 }
 
 .board-heading{
-    color: var(--white, #FFF);
+    color: var(--white);
     text-align: center;
-    font-weight: 700;
     font-size: 56px;
     line-height: 1.07em;
     letter-spacing: 1.12px;
@@ -128,7 +128,7 @@ body{
 
 .board-button{
     /*BUTTON ICON*/
-    background: var(--iris, #4D5AE5);
+    background: var(--iris);
     align-items: flex-start;
     display: inline-flex;
     padding: 16px 32px;
@@ -138,11 +138,12 @@ body{
     margin: 48px 0px 0px 610px;
 
     /*BUTTON TEXT*/
-    color: var(--white, #FFF);
+    color: var(--white);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5em;
     letter-spacing: 0.64px;
+    border: unset;
 }
 
 .board-button:hover{
@@ -150,8 +151,8 @@ body{
 }
 
 .board-button:active, .board-button:focus {
-    color: var(--iris, #4D5AE5);
-    background: var(--white, #FFF);
+    color: var(--iris);
+    background: var(--white);
 }
 
 .features-content{
@@ -167,22 +168,26 @@ body{
     font-weight: 500;
     font-size: 20px;
     letter-spacing: 0.4px;
+    line-height: 1.2em;
 }
 
 .features-content-list-item-paragraph{
-    color: var(--slate, #434455);
+    color: var(--slate);
     font-size: 16px;
     letter-spacing: 0.32px;
+    line-height: 1.2em;
     width: 264px;
 }
 
 .activity{
     text-align: center;
-    text-transform: capitalize;
-    font-weight: 700;
+}
+
+.activity-heading{
     font-size: 36px;
     line-height: 1.11em;
     letter-spacing: 0.72px;
+    text-transform: capitalize;
 }
 
 .activity-list{
@@ -190,18 +195,17 @@ body{
 }
 
 .team{
-    background-color: var(--cloud, #F4F4FD);
+    background-color: var(--cloud);
     text-align: center; 
     height: 732px;
     flex-shrink: 0;
 }
 
 .team-heading{
-    text-transform: capitalize;
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.11em;
     letter-spacing: 0.72px;
+    text-transform: capitalize;
     padding: 120px 0 72px 0;
 }
 
@@ -211,11 +215,10 @@ body{
     line-height: 1.2em;
     letter-spacing: 0.4px;
     margin: 0px 0px 0px 0px;
-    padding-top: -15%;
 }
 
 .team-list-item-paragraph{
-    color: var(--slate, #434455);
+    color: var(--slate);
     font-size: 16px;
     line-height: 1.5em;
     letter-spacing: 0.32px;
@@ -223,7 +226,7 @@ body{
 }
 
 .team-list-item {
-    background: var(--white, #FFF);
+    background: var(--white);
     display: inline-flex;
     padding-bottom: 0px;
     flex-direction: column;
@@ -242,13 +245,13 @@ body{
 }
 
 .filter-list-item-button{   
-    background: var(--cloud, #F4F4FD);
+    background: var(--cloud);
     border: 1px solid #E7E9FC;
     border-radius: 4px;
     padding: 12px 24px;
 
     /* Button Text */
-    color: var(--iris, #4D5AE5);
+    color: var(--iris);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5em;
@@ -261,12 +264,12 @@ body{
 }
 
 .filter-list-item-button:active, .filter-list-item-button:focus{
-    background: var(--ocean, #404BBF);
+    background: var(--ocean);
     border-radius: 4px;
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 
     /* Button Text */
-    color: var(--white,#FFF);
+    color: var(--white);
     text-align: center;
     font-weight: 500;
     font-size: 16px;
@@ -279,7 +282,7 @@ body{
 }
 
 .project-list-item{
-    background: var(--white, #FFF);
+    background: var(--white);
     border: 1px solid#E7E9FC;
     width: 360px;
     height: 420px;
@@ -288,6 +291,20 @@ body{
     align-items: flex-start;
     gap: 32px;
     flex-shrink: 0;
+}
+
+.project-list-item-heading{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2em;
+    letter-spacing: 0.4px;
+}
+
+.project-list-item-paragraph{
+    color: var(--slate, #434455);
+    font-size: 16px;
+    line-height: 1.5em;
+    letter-spacing: 0.32px;
 }
 
 
